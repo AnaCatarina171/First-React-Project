@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import NewExpenses from "./components/Expenses/NewExpenses.js";
+import Expenses from "./components/Expenses/Expenses.js";
 import NewExpense from "./components/NewExpense/NewExpense.js";
 
 const DUMMY_EXPENSES = [
@@ -42,13 +42,13 @@ const App = () => {
   //   "div",
   //   {},
   //   React.createElement("h2", {}, "Lets get started!"),
-  //   React.createElement(NewExpenses, { expenses: expenses })
+  //   React.createElement(Expenses, { expenses: expenses })
   // );
 
   return ( /* JSX - JavaScript Xml */
     <div>
       <NewExpense onAddExpense={addExpensehandler}></NewExpense>
-      <NewExpenses expenses={expenses}/>
+      <Expenses expenses={expenses}/>
     </div>
   );
 }
